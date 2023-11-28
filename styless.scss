@@ -1,0 +1,25 @@
+#navbar-example3 a {
+    color: #7454d2;
+    /* Color para los enlaces */
+}
+
+#navbar-example3 a:hover {
+    color: #a7288b;
+    /* Color al pasar el mouse sobre los enlaces */
+}
+.sidenav .nav-link.active {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -5px; // Ajusta la posición según tus preferencias
+        top: 0;
+        bottom: 0;
+        width: 2px; // Ancho de la línea lateral
+        height: 25px;
+        background-color: #a71c7a; // Reemplaza "tucolordeseado" con tu color preferido
+    }
+}
+
+@import "bootstrap/scss/bootstrap.scss";
